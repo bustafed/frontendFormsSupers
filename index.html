@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir super</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="topHead">20% de descuento en todos los productos!</div>
+        <div id="botHead">Nombre tienda</div>
+    </header>
+    <main>
+        <form action="#">
+            <h1>Añadí tu super!</h1>
+            <h4>Agregá tu personaje favorito completando las opciones!</h4>
+            <div class="divForm">
+                <div class="childDiv">
+                    <label class="req" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div  class="childDiv">
+                    <label class="req" for="Especie">Especie</label>
+                    <select name="especie" id="especie">
+                    <option value="selec" disabled selected hidden>Seleccionar opción...</option>
+                    <option value="humano">Humano</option>
+                    <option value="extra">Extraterrestre</option>
+                </select>
+                </div>  
+            </div>
+            <div class="divForm">
+                <div class="childDiv">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div  class="childDiv">
+                    <label for="foto">Agregar foto</label>
+                    <input type="file" name="foto" id="foto" accept=".jpg, .png">
+                </div>  
+            </div>
+
+            <div class="divForm">
+                <div class="childDiv">
+                    <textarea id="descripcion" name="descripcion" placeholder="Descripción" rows="15" style="resize: none;"></textarea>
+                </div>
+                <div class="childDivPowers">
+                    <p>Poderes</p>
+                    <input class="check" type="checkbox" name="poder" id="volar">
+                    <label class="labelCheck" for="volar">Volar</label>
+                    <br>
+                    <input class="check" type="checkbox" name="poder" id="inteli">
+                    <label class="labelCheck" for="inteli">Súperinteligencia</label>
+                    <br>
+                    <input class="check" type="checkbox" name="poder" id="laser">
+                    <label class="labelCheck" for="laser">Vista rayo láser</label>
+                    <br>
+                    <input class="check" type="checkbox" name="poder" id="pizza">
+                    <label class="labelCheck" for="pizza">Crear pizza de la nada</label>
+                    <br>
+                    <hr>
+                    <p>Tipo de personaje</p>
+                    <input class="check" type="radio" name="tipo" id="hero">
+                    <label class="labelCheck" for="hero">Héroe/Heroína</label>
+                    <br>
+                    <input class="check" type="radio" name="tipo" id="villano">
+                    <label class="labelCheck" for="villano">Villano/Villana</label>
+                </div>  
+            </div>
+            <input type="submit" name="añadir" id="añadir" value="Añadir">
+        </form> 
+    </main>
+    <footer>Todos los derechos reservados a QuasiCorp</footer>
+</body>
+</html>
